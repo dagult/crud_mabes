@@ -601,7 +601,7 @@
                 <h1>Data Anggota TNI</h1>
                
                 <a href="<?php echo base_url().'anggota/add'?>" class="btn btn-primary">Tambah Data Anggota</a>
-                <a href="users/index" class="btn btn-primary">Setting User</a>
+                <a href="<?php echo base_url().'users/index'?>" class="btn btn-primary">Setting User</a>
                 <table class="table" rules= "all" border="2">
                <!--  <table class="table tabel_anggota" id="tab" rules="all"> -->
                     <thead>
@@ -638,7 +638,7 @@
                             <td>$row[alamat]</td>
                             <td>$row[email]</td>
                             <td>
-                                <a href='data/edit/$row[id]' class='btn btn-sm btn-info'>Update</a>
+                                <a href='anggota/edit/$row[id]' class='btn btn-sm btn-info'>Update</a>
                                 <a href='data/delete/$row[id]' class='btn btn-sm btn-danger'>Hapus</a>
                             </td>
                         </tr>
